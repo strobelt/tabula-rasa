@@ -8,7 +8,6 @@
                  [http-kit "2.5.3"]
                  [ring "1.9.5"]
                  [ring/ring-defaults "0.3.3"]
-                 [metosin/ring-http-response "0.9.3"]
                  [org.clojure/data.json "2.4.0"]]
   :main ^:skip-aot tabula-rasa.core
   :target-path "target/%s"
