@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6679da28-b47b-471b-8547-832a3eee6a91" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28oiBRtyC6nQ2FI0ITnklL6TFeI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="ReplState" timestamp="1652154797254">{:repl-history {:ide [], :local [{:command &quot;(def people (atom []))&quot;, :offset 22, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(defn add-person! [first-name last-name]\n  (swap! people conj {:first-name (str/capitalize first-name)\n                      :last-name (str/capitalize last-name)}))&quot;, :offset 165, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(add-person! \&quot;Luiz\&quot; \&quot;strobelt\&quot;)&quot;, :offset 31, :ns &quot;tabula-rasa.core&quot;} {:command &quot;@people&quot;, :offset 7, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(str @people)&quot;, :offset 13, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(json/write-str @people)&quot;, :offset 24, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(str (json/write-str @people))&quot;, :offset 30, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(ns tabula-rasa.core\n  (:require [compojure.core :refer :all]\n            [compojure.route :as route]\n            [org.httpkit.server :as server]\n            [ring.middleware.defaults :refer :all]\n            [clojure.string :as str]\n            [clojure.data.json :as json])\n  (:gen-class))&quot;, :offset 291, :ns &quot;user&quot;} {:command &quot;(defn get-parameter [req &amp; [param-path]] (get-in req (concat [:params] param-path)))&quot;, :offset 84, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(def req {:params {:first-name \&quot;luiz\&quot;}})&quot;, :offset 40, :ns &quot;tabula-rasa.core&quot;} {:command &quot;req&quot;, :offset 3, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(get-parameter req ':first-name)&quot;, :offset 32, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(get-parameter req [:first-name])&quot;, :offset 33, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(defn get-parameter [req &amp; param-path] (get-in req (concat [:params] param-path)))&quot;, :offset 82, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(get-parameter req :first-name)&quot;, :offset 31, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(ns tabula-rasa.core\n  (:require [compojure.core :refer :all]\n            [compojure.route :as route]\n            [org.httpkit.server :as server]\n            [ring.middleware.defaults :refer :all]\n            [ring.util.http-response :refer :all]\n            [ring.util.http-status :as status]\n            [clojure.string :as str]\n            [clojure.data.json :as json])\n  (:gen-class))&quot;, :offset 388, :ns &quot;user&quot;} {:command &quot;(ok \&quot;oi\&quot;)&quot;, :offset 9, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(update-header (ok \&quot;Oi\&quot;) \&quot;Content-Type\&quot; \&quot;application/json\&quot;)&quot;, :offset 59, :ns &quot;tabula-rasa.core&quot;} {:command &quot;(update-header (ok \&quot;Oi\&quot;) \&quot;Content-Type\&quot; str \&quot;application/json\&quot;)&quot;, :offset 63, :ns &quot;tabula-rasa.core&quot;}], :remote []}}</component>
+  <component name="RunManager">
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Start REPL" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <module name="tabula-rasa" />
+      <setting name="displayName" value="Start REPL" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="INTELLIJ" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6679da28-b47b-471b-8547-832a3eee6a91" name="Changes" comment="" />
+      <created>1651889204675</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651889204675</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="90e9b8ad-c161-4428-8064-28245791eba1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="90e9b8ad-c161-4428-8064-28245791eba1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+  </component>
+</project>
